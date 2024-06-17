@@ -1,0 +1,32 @@
+{
+  "name": "octoherd-script-remove-branches-config-semantic-release",
+  "version": "0.0.0-development",
+  "type": "module",
+  "exports": "./script.js",
+  "bin": {
+    "octoherd-script-remove-branches-config-semantic-release": "./cli.js"
+  },
+  "description": "remove 'release.branches' from Semantic Release (https://github.com/semantic-release/semantic-release)  configuration in package.json",
+  "scripts": {
+    "start": "node cli.js",
+    "test": "node --test **.test.js"
+  },
+  "repository": "https://github.com/oscard0m/octoherd-script-remove-branches-config-semantic-release",
+  "keywords": [
+    "octoherd-script"
+  ],
+  "author": "Oscar Dominguez <dominguez.celada@gmail.com> (https://www.oscardom.dev)",
+  "license": "ISC",
+  "dependencies": {
+    "@octoherd/cli": "^5.0.0",
+    "@octokit/plugin-create-or-update-text-file": "^5.1.0"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "devDependencies": {
+    "nock": "^14.0.0-beta.5"
+  }
+}
